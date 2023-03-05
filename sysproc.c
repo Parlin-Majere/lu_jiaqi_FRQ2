@@ -110,6 +110,6 @@ sys_cv_wait(void)
   struct condvar *cv;
   argint(0, &i);
   cv = (struct condvar *) i;
-  sleep1(cv);
+  sleep1(cv, &(cv->lk));
   return 0;
 }

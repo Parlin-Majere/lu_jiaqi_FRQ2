@@ -112,7 +112,7 @@ init_lock(struct spinlock * lk) {
 }
 
 void lock(struct spinlock * lk) {
-  while(xchg*(&lk->locked, 1) != 0)
+  while(xchg(&lk->locked, 1) != 0)
     ;
 }
 

@@ -2,6 +2,8 @@ struct stat;
 struct rtcdate;
 // part 3
 struct condvar;
+// part 4
+struct spinlock;
 
 // system calls
 int fork(void);
@@ -46,3 +48,5 @@ int atoi(const char*);
 // part 2
 void lock(struct spinlock *);
 void unlock(struct spinlock *);
+// part 4
+void init_lock(struct spinlock *);
