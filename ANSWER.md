@@ -6,7 +6,7 @@ Part 1:
 	Q: Do you always get the same order of execution?
 	A: No, parent waiting print statement may happen before child1 or after.
 
-	Q: Does Child 1 always execute bnefore Child 2?
+	Q: Does Child 1 always execute before Child 2?
 	A: Yes.
 
 	added sleep(5) before child 1 print
